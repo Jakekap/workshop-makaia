@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Workshop Formulario</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <header class="header">
+        <h1 class="title">Learn to code by watching other</h1>
+        <h2 class="subtitle">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+          cupiditate quod accusantium veritatis vitae animi praesentium eaque
+          officiis natus quos harum minima esse ut, aspernatur facere nobis
+          deleniti est recusandae?
+        </h2>
+      </header>
+      <section class="form_container">
+        <button class="primary_button">
+          <span class="strong">Try it free 7 days</span> then $20/mo, thereafter
+        </button>
+        <form class="form">
+          <input
+            required
+            id="firstName"
+            class="input_form"
+            type="text"
+            placeholder="First Name"
+            name="first-name"
+          />
+          <label id="label_name" class="label">
+            <span id="icon_name"></span>
+            Por favor ingrese su nombre
+          </label>
+          <input
+            required
+            id="lastName"
+            class="input_form"
+            type="text"
+            placeholder="Last Name"
+            name="last-name"
+          />
+          <label id="label_lastName" class="label">
+            <span id="icon_lastName"></span>
+            Por favor ingrese su apellido
+          </label>
+          <input
+            required
+            autocomplete="email"
+            id="email"
+            class="input_form"
+            type="email"
+            placeholder="Email Address"
+            name="email"
+          />
+          <label id="label_email" class="label">
+            <span id="icon_email"></span>
+            Por favor ingrese su correo
+          </label>
+          <input
+            required
+            autocomplete="current-password"
+            id="password"
+            class="input_form"
+            type="password"
+            placeholder="Password"
+            name="password"
+          />
+          <label id="label_password" class="label">
+            <span id="icon_password"></span>
+            Por favor ingrese su contraseña
+          </label>
+          <button type="submit" class="submit_button">
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="form_footer">
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </p>
+        </form>
+      </section>
+    </div>
+    <footer class="footer"></footer>
+    <script src="form.js"></script>
+  </body>
+</html>

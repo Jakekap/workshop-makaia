@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%);
+}
+
+.title {
+  font-size: 2rem;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: white;
+}
+
+.form_container {
+  display: inline;
+}
+.main_container {
+  display: flex;
+  height: 100vh;
+  margin: 0 10%;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 50%;
+}
+.form_container {
+  width: 50%;
+}
+.primary_button {
+  color: white;
+  background-color: hsl(248, 32%, 49%);
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.submit_button {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  transition: all ease 0.1s;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.submit_button:active {
+  transform: translateY(3px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 0px 0px inset;
+}
+.form {
+  margin-top: 1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.input_form {
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  border-radius: 0.2rem;
+  border: 1px solid #c3c3c3;
+  color: hsl(249, 10%, 26%);
+  font-weight: 600;
+}
+.input_form:focus {
+  outline: none;
+  border: 1px solid hsl(249, 10%, 26%);
+}
+.form_footer {
+  font-size: 0.5rem;
+}
+.strong {
+  font-weight: 600;
+}
+.error_input {
+  border-color: hsl(0, 100%, 74%);
+}
+.error_icon::before {
+  position: absolute;
+  bottom: 32px;
+  right: 10px;
+  content: url(./images/icon-error.svg);
+}
+.error_input::placeholder {
+  color: hsl(0, 100%, 74%);
+}
+.label {
+  display: none;
+}
+.error_label {
+  display: block;
+  position: relative;
+  font-size: 0.6rem;
+  margin: 0.3rem;
+  margin-top: -0.5rem;
+  width: 100%;
+  text-align: end;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+}
+
+@media (max-width: 1200px) {
+  .main_container {
+    height: 100%;
+    flex-direction: column;
+    margin: 0 10%;
+  }
+  .header {
+    width: 100%;
+  }
+  .form_container {
+    width: 100%;
+  }
+  .footer {
+    height: 2rem;
+  }
+}
